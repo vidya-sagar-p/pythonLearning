@@ -21,3 +21,9 @@ for spe_char in range(nr_symbols):
 #print(password)
 random.shuffle(password)
 print(f"Here is your password : {''.join(password)}")
+
+#alternative logic to store letters from list to string
+#random_password = ""
+#for i in password:
+#  random_password += i
+
