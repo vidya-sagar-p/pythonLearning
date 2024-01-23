@@ -23,6 +23,17 @@ def fall():
         else:
             turn_left()
 
+# def jump():
+#     turn_left()
+#     while wall_on_right():
+#         move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     while front_is_clear():
+#         move()
+#     turn_left()
+
 
 # for i in range(6):
 while at_goal() != True:
@@ -32,3 +43,9 @@ while at_goal() != True:
         fall()
     else:
         move()
+
+# while at_goal() != True:
+#     if wall_in_front():
+#         jump()
+#     else:
+#         move()
