@@ -4,7 +4,7 @@ def turn_right():
     turn_left()
 
 
-def jump():
+def run():
     turn_right()
     while front_is_clear() and right_is_clear():
         move()
@@ -16,7 +16,7 @@ def jump():
 # for i in range(6):
 while at_goal() != True:
     if wall_in_front() and right_is_clear():
-        jump()
+        run()
     elif wall_in_front() and wall_on_right():
         turn_left()
         while front_is_clear():
